@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Todo App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+   
+  </head>
+  <body>
+
+      <div class="hero-image">
+        
+        <div class="hero-text">
+          <div class="mySlides">
+            <q>It's not knowing what to do, it's doing what you know. </q>
+            <p class="author">- Tony Robbins</p>
+          </div>
+        
+          <div class="mySlides">
+            <q>The key is not to prioritize what's on your schedule, but to schedule your priorities.</q>
+            <p class="author">- Stephen Covey</p>
+          </div>
+        
+          <div class="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author">- Thomas A. Edison</p>
+          </div>
+          <div class="mySlides">
+            <q>Great acts are made up of small deeds.</q>
+            <p class="author">- Thomas A. Edison</p>
+          </div>
+          <button class="open-button" onclick="openForm()">Add Task</button>
+          <!-- Next/prev buttons -->
+         
+  <!-- Next/prev buttons -->
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+  
+      </div>
+
+  
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+      
+      
+      <div class="form-popup" id="myForm">
+        <form  class="form-container">
+          <h1>Add task</h1>
+          <div class="form-group">
+            <label for="taskname">Task</label>
+            <input type="text" id="taskname" class="form-control" placeholder="Enter Task">
+          </div>
+    
+          <div class="form-group">
+            <label for="tasktime">Time</label>
+            <input type="date" id="tasktime" class="form-control" placeholder="Select Date">
+          </div>
+    
+          <div class="form-group">
+            <label for="inputdefault" class="col-sm-2 control-label">Time</label>
+            <input type="time" class="form-control" id="invisible-time"required>  
+          </div>
+    
+          <button type="button" id="submit" class="btn">Save</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+      </div>
+
+
+    <div class="jumbotron">
+      <h2 style="text-align:center">Current Tasks</h2>
+      <div class="card">
+        <div class="card-group">
+          
+        </div>
+      </div>
+      
+    </div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <script src="scripts/todo.js"></script>
+   
+  </body>
+</html>
